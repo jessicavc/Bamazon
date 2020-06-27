@@ -1,0 +1,30 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "command line shopping application",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "node bamazonCustomer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessicavc/Bamazon.git"
+  },
+  "keywords": [
+    "Command",
+    "Line",
+    "Shopping",
+    "APp"
+  ],
+  "author": "Jessica Vaiana-Cavanagh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessicavc/Bamazon/issues"
+  },
+  "homepage": "https://github.com/jessicavc/Bamazon#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "inquirer": "^7.2.0"
+  }
+}
