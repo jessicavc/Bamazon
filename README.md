@@ -2,7 +2,7 @@
 
 1. Uses a MySQL Database called `bamazon_db`.
 
-2. The bamazon_db contains a table inside of it called `products`.
+2. `bamazon_db` contains a table inside of it called `products`.
 
 3. The products table has each of the following columns:
 
