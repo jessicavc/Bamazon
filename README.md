@@ -29,8 +29,9 @@
 
 7. Once the customer has placed the order, the application will check if the store has enough of the product to meet the customer's request.
 
-   * If not, the app will log `Sorry, Insufficient inventory`, and then a message will appear asking if customer would like to proceed with their order
+   * If not, the app will log `Sorry, Insufficient inventory`, and then a message will appear asking if customer would like to proceed with their order (Y/N). If customer selects 'NO', the connection will end. If the customer selects 'YES', the prompt cycle will start over.
 
-8. However, if your store _does_ have enough of the product, the customer's order will be fulfilled.
-   * This means updating the SQL database to reflect the remaining quantity.
-   * Once the update goes through, show the customer the total cost of their purchase.
+8. However, if the store _DOES_ have enough of the product, the customer's order will be fulfilled and will display the total of the purchase. 
+
+## Happy Shopping 
+   

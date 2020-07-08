@@ -122,7 +122,7 @@ var askHowMany = function(chosenID) {
       connection.query('SELECT stock_quantity FROM products WHERE ?', { item_id: chosenItem.item_id }, (err, res) => {
           // if there are not enough products in stock
           if (res[0].stock_quantity < answer.howMany) {
-              console.log(chalk.blue.bold('\n\tSorry, insufficient quantity in stock!\n'));
+              console.log(chalk.blue.bold('\n\tSorry, insufficient inventory.\n'));
               // confirm if user would still like to buy this product
               inquirer.prompt({
                   name: 'proceed',
