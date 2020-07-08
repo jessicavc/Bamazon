@@ -1,6 +1,6 @@
 # Welcome to Bamazon
 
-1. Uses a MySQL Database called `bamazon`.
+1. Uses a MySQL Database called `bamazon_db`.
 
 2. The bamazon_db contains a table inside of it called `products`.
 
