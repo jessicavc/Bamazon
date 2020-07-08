@@ -68,7 +68,7 @@ var askForID = function() {
           if (!isNaN(value) && (value > 0 && value <= 20)) {
               return true;
           } else {
-              console.log("Please enter a number from 1-20");
+              console.log("Uh-oh! Please enter a number from 1-20");
               return false;
           }
       }
@@ -152,7 +152,7 @@ var askHowMany = function(chosenID) {
                       item_id: chosenItem.item_id
                   }
               ], (err, res) => {
-                  console.log(chalk.blue.bold(`\n\tOrder confirmed!!! Your total was $${(chosenItem.price * chosenItem.howMany).toFixed(2)}.\n`));
+                  console.log(chalk.blue.bold(`\n\tOrder confirmed!Your total is $${(chosenItem.price * chosenItem.howMany).toFixed(2)}.\n`));
                   // ask if user would like to make another purchase
                   promptNewPurchase();
               });
@@ -172,7 +172,7 @@ var promptNewPurchase = function() {
           resetCart();
           askForID();
       } else {
-          console.log(chalk.blue.bold('\n\tWe appreciate your business. Have a great day!\n'));
+          console.log(chalk.blue.bold('\n\tThank you for shopping with us. Have a great day!\n'));
           connection.end();
       }
   });
