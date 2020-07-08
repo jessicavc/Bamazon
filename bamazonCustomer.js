@@ -68,7 +68,7 @@ var askForID = function() {
           if (!isNaN(value) && (value > 0 && value <= 20)) {
               return true;
           } else {
-              console.log("Uh-oh! Please enter a number from 1-20");
+              console.log("Uh-oh! Enter a number from 1-20");
               return false;
           }
       }
@@ -145,8 +145,7 @@ var askHowMany = function(chosenID) {
               // update database to reflect new stock quantity after sale
               connection.query('UPDATE products SET ? WHERE ?', [
                   {
-                      stock_quantity: chosenItem.stock_quantity - answer.howMany,
-                      product_sales: chosenItem.product_sales + (chosenItem.price * answer.howMany)
+                      stock_quantity: chosenItem.stock_quantity - answer.howMany
                   },
                   {
                       item_id: chosenItem.item_id
